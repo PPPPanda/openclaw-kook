@@ -1,5 +1,5 @@
 {
-  "name": "openclaw-kook",
+  "name": "kook",
   "version": "0.1.0",
   "type": "module",
   "description": "OpenClaw KOOK (开黑啦) channel plugin — connect your AI assistant to KOOK servers",
