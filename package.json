@@ -1,0 +1,66 @@
+{
+  "name": "openclaw-kook",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenClaw KOOK (开黑啦) channel plugin — connect your AI assistant to KOOK servers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PPPPanda/openclaw-kook.git"
+  },
+  "homepage": "https://github.com/PPPPanda/openclaw-kook#readme",
+  "bugs": {
+    "url": "https://github.com/PPPPanda/openclaw-kook/issues"
+  },
+  "author": "PPPPanda",
+  "files": [
+    "index.ts",
+    "src",
+    "openclaw.plugin.json"
+  ],
+  "keywords": [
+    "openclaw",
+    "kook",
+    "kaiheila",
+    "开黑啦",
+    "chatbot",
+    "ai",
+    "claude",
+    "channel-plugin"
+  ],
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "kook",
+      "label": "KOOK",
+      "selectionLabel": "KOOK (开黑啦)",
+      "docsPath": "/channels/kook",
+      "docsLabel": "kook",
+      "blurb": "KOOK (开黑啦) gaming community platform.",
+      "aliases": [
+        "kaiheila"
+      ],
+      "order": 75
+    },
+    "install": {
+      "npmSpec": "openclaw-kook",
+      "localPath": ".",
+      "defaultChoice": "local"
+    }
+  },
+  "dependencies": {
+    "ws": "^8.18.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.14",
+    "openclaw": ">=2026.2.0",
+    "typescript": "^5.7.0"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.2.0"
+  }
+}
